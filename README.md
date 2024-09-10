@@ -9,11 +9,11 @@ Data Studio was used to create visualizations and dashboard reports.
 
 ## PostgreSQL
 
-The database was created first by tables and then by adding data. Here is the Entity Relational Diagram (EDR) of the structure of the tables of the database 
+The database was created first with schemas and then by adding data with CSV files. Here is the Entity Relational Diagram (EDR) of the structure of the tables of the database.
 
 ![image](https://github.com/user-attachments/assets/59062cac-1616-445d-8072-fcc6bc95cd57)
 
-The database consists of 9 tables:
+The database consists of 9 tables as follows:
 1. orders
 2. customer
 3. address
@@ -29,9 +29,9 @@ The data was inserted in every table, is precise to mention that data was obtain
 
 This project showcases SQL querying skills by:
 
-Tracking Orders and Sales
-Managing Stock Levels and Inventory Costs
-Analyzing Staff Schedules and Labor Costs
+Tracking Orders and Sales.
+Managing Stock Levels and Inventory Costs.
+Analyzing Staff Schedules and Labor Costs.
 
 ## Key Features
 
@@ -59,20 +59,20 @@ FROM orders o
 left join item i ON o.item_id = i.item_id
 left join address a ON o.add_id = a.add_id;
 ```
-This query corresponds to Dashboard 1 and response to 
+This query corresponds to Dashboard 1 and response to the following insights:
 
-1. Total sales
-2. Total items
-3. Total orders
-4. Average order value
-5. Sales by category
-6. Top selling items
-7. Order by hour
-8. Sales by hour
-9. Orders by address
-10. Orders by delivery/pickup
+1. Total sales.
+2. Total items.
+3. Total orders.
+4. Average order value.
+5. Sales by category.
+6. Top selling items.
+7. Order by hour.
+8. Sales by hour.
+9. Orders by address.
+10. Orders by delivery/pickup.
 
-Stock Inventory: this query is elaborated with orders, items and ingredient tables an elaborate sub-queries s1 to create some calculations
+Stock Inventory: this query is elaborated with orders, items and ingredient tables an elaborate sub-queries s1 to create some calculations.
 
 ```sql
 SELECT
@@ -126,9 +126,9 @@ FROM
 
 This query stock1(s1) corresponds to Dashboard 2 and responds to:
 
-1. Total quantity by ingredient
-2. Total cost of ingredients
-3. Calculated cost of pizza
+1. Total quantity by ingredient.
+2. Total cost of ingredients.
+3. Calculated cost of pizza.
 
 and additional subquery is elaborated for dashboard 2
 
@@ -146,8 +146,8 @@ FROM
 ```
 This query stock2(S2) respond to following answers:
 
-1. Stock remaining by ingredient
-2. Re-order ingredient list based on inventory 
+1. Stock remaining by ingredient.
+2. Re-order ingredient list based on inventory .
 
 Staff: This query is elaborated with rota, staff, and shift tables.
 
@@ -171,9 +171,9 @@ FROM
 ```
 The Staff query brings the following information:
 
-1. Staff Data (Names, Date, and Hourly Rate)
-2. Shift data
-3.  Calculate staff cost
+1. Staff data. (Names, Date, and Hourly Rate)
+2. Shift data.
+3.  Calculate staff cost.
 
 ## Tools Used
 PostgreSQL: For querying and data manipulation.
